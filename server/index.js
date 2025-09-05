@@ -14,10 +14,9 @@ app.use(bodyParser.json());
 const PORT = process.env.PORT || 5000;
 
 const supabaseUrl =
-  process.env.SUPABASE_URL || "https://kpzikeaegnbjzageaogu.supabase.co";
+  process.env.SUPABASE_URL;
 const supabaseKey =
-  process.env.SUPABASE_KEY ||
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtwemlrZWFlZ25ianphZ2Vhb2d1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTY5OTEyODksImV4cCI6MjA3MjU2NzI4OX0.aDW5W4QLJBgZtJEyH2pJsNTBT3y68J9p3UwPlfzphOs";
+  process.env.SUPABASE_KEY ;
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
